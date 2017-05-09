@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app6.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head><body onLoad="MM_preloadImages('imagenes/batalla.jpg','imagenes/preventivas.jpg','imagenes/museo1.jpg','imagenes/centro.jpg','imagenes/batalla2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>BATALLA DE PUEBLA</h1>
+</div>
+<div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/atlixco2.jpg" alt="atlixco2" title="atlixco2" id="wows1_0"/></li>
+		<li><img src="data1/images/batalla.jpg" alt="batalla" title="batalla" id="wows1_1"/></li>
+		<li><img src="data1/images/batalla2.jpg" alt="batalla2" title="batalla2" id="wows1_2"/></li>
+		<li><img src="data1/images/batalla3.jpg" alt="batalla3" title="batalla3" id="wows1_3"/></li>
+		<li><img src="data1/images/batalla4.jpg" alt="batalla4" title="batalla4" id="wows1_4"/></li>
+		<li><img src="data1/images/batalla5.jpg" alt="batalla5" title="batalla5" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/heroes.jpg" alt="bootstrap slider" title="heroes" id="wows1_6"/></a></li>
+		<li><img src="data1/images/museo2.jpg" alt="museo2" title="museo2" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="atlixco2"><span><img src="data1/tooltips/atlixco2.jpg" alt="atlixco2"/>1</span></a>
+		<a href="#" title="batalla"><span><img src="data1/tooltips/batalla.jpg" alt="batalla"/>2</span></a>
+		<a href="#" title="batalla2"><span><img src="data1/tooltips/batalla2.jpg" alt="batalla2"/>3</span></a>
+		<a href="#" title="batalla3"><span><img src="data1/tooltips/batalla3.jpg" alt="batalla3"/>4</span></a>
+		<a href="#" title="batalla4"><span><img src="data1/tooltips/batalla4.jpg" alt="batalla4"/>5</span></a>
+		<a href="#" title="batalla5"><span><img src="data1/tooltips/batalla5.jpg" alt="batalla5"/>6</span></a>
+		<a href="#" title="heroes"><span><img src="data1/tooltips/heroes.jpg" alt="heroes"/>7</span></a>
+		<a href="#" title="museo2"><span><img src="data1/tooltips/museo2.jpg" alt="museo2"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1><a href="http://puebla.travel/es/museos/item/museo-interactivo-de-la-batalla-del-5-de-mayo" target="_self">Museos en Puebla</a></h1>
+<div>
+<p>Museo interactivo de la Batalla del 5 de mayo:</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust','','imagenes/museo1.jpg',1)"><img src="imagenes/museo2.jpg" width="351" height="238" id="sust"></a></p>
+<p>Centro cultural Civico del 5 de Mayo:</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/centro.jpg',1)"><img src="imagenes/centro1.jpg" width="341" height="317" id="Image26"></a><br>
+</div>
+<div>
+  </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Consecuencias:</h1>
+<div>
+<p>La separación de la Iglesia y del Estado en 1794 fue un antecedente para separar la religión de la política en otras partes del mundo.</p>
+<p>La burguesía amplió cada vez más su influencia en Europa</p>
+<p>Se difundieron ideas democráticas</p>
+<p>Se fomentaron los movimientos nacionalistas.</p>
+<br>
+</div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/batalla2.jpg',1)"><img src="imagenes/batalla4.jpg" width="413" height="303" id="Image27"></a>
+<div>
+  
+</div>
+</div>
+</div>
+ <div data-role="main" class="ui-content" align="center">
+ <div style="width:80%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+ <a href="https://es.wikipedia.org/wiki/Batalla_de_Puebla" data-role="button">
+ <h2>BATALLA DE PUEBLA</h2>
+ </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+ <a href="https://es.wikipedia.org/wiki/Batalla_de_Atlixco" data-role="button">
+ <h2>BATALLA DE ATLIXCO</h2>
+ </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="http://www.saberia.com/quienes-lucharon-en-la-batalla-del-5-de-mayo/" data-role="button">
+ <h2>HEROES DE LA BATALLA</h2>
+ </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="http://www.paxala.com/la-batalla-de-puebla/" data-role="button">
+ <h2>CONSECUENCIAS DE LA BATALLA</h2>
+ </a>
+ </li>
+ </ul>
+ </div>
+ </div>
+
+
+
+
+
+
+
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>BATALLA DEL 5 DE MAYO</h2>
+ <p>¿Qué fue la batalla?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>BATALLA DEL 4 DE MAYO</h2>
+<p>¿Qué sucedió el 4 de mayo?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>INICIO DEL CONFLICTO</h2>
+<p>¿Por qué se dió inicio a una batalla?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>MONUMENTOS DE LA BATALLA</h2>
+<p>¿Qué monumentos existen?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>PERSONAJES DE LA BATALLA</h2>
+ <p>¿Quienes fueron los personajes de la batalla?</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+ <img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion Seis</h4>
+<h4>Viridiana Cortez Diaz</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>BATALLA 5 MAYO:</a></h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>La batalla de Puebla fue un combate librado el 5 de mayo de 1862 en las cercanías de la ciudad de Puebla, entre los ejércitos de la República Mexicana, bajo el mando de Ignacio Zaragoza, y del Segundo Imperio Francés, dirigido por Charles Ferdinand Latrille, conde de Lorencez, durante la Segunda Intervención Francesa en México, cuyo resultado fue una victoria importante para los mexicanos ya que con unas fuerzas consideradas como inferiores lograron vencer a uno de los ejércitos más experimentados y respetados de su época.</p></h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>BATALLA DE PUEBLA</h2>
+<div>
+<img src="imagenes/batalla1.jpg" width="640" height="310" alt="batalla"><br>
+</div>
+<div>
+</div>
+<p></a></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion seis,VCD</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>BATALLA DEL 4 MAYO</h1>
+</div>
+ <div data-role="content" align="center">
+<div>
+<h2>La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>LA BATALLA EN ATLIXCO</h1>
+<div>
+<p>Esta batalla permitió, un día después, la gloria del escuadrón militar de Ignacio Zaragoza, aunque no fue un conflicto político, sino de sobrevivencia lo que dio entrada al combate suscitado en el municipio ubicado a menos de una hora de la capital.<br>
+</p></div>
+<div>
+  <p><img src="imagenes/atlixco.jpg" width="354" height="229" alt="atlixco"></p> 
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Seis,VCD</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>INICIO DEL CONFLICTO:</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <h2>Algunas de las causas por las que se inició esta batalla son:</h2>
+   <p>Era claro que la República de México se encontraba sumida en crisis y tenía una deuda con Francia, España e Inglaterra; deuda que por la crisis, Benito Juárez, presidente de la época decidió no pagar por el momento y solicitar una tregua de 2 años para pagarla.</p>
+   <p>Esta decisión de no pagar por el momento, disgustó a los acreedores de la deuda y decidieron agruparse para invadir a la Republica de México y cobrarse sus deudas, adicionalmente, cada uno de estos 3 países tenían intereses mas allá de la deuda; tenían intereses económicos, mineros y de expansión de sus negocios, también de colonización de territorios.</p>
+   <p></p>
+   <p></p>
+   
+  
+   <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>CAUSAS</h2>
+<div>
+</div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('batallaP','','imagenes/batalla.jpg',1)"><img src="imagenes/batalla5.jpg" width="640" height="426" id="batallaP"></a></p>
+</div>
+</div>
+</div>
+</div>
+ <div data-role="footer" data-theme="a" data-position="fixed"> <h4>Aplicacion Seis,VCD</h4>
+</div>
+</div>
+   
+   
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>MONUMENTOS DE LA BATALLA:</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Emblemático monumento</a></h2>
+ <p>A Ignacio Zaragoza:</p>
+ <p>Durante la Segunda Intervención Francesa en Puebla, Ignacio Zaragoza visitó a las tropas en la borrasca de las cumbres de Acultzingo. En ese momento ya había reportes de tifo o tifus –no confundir con tifoidea– entre algunos de los soldados. Desgraciadamente, fue aquí que el general se contagió de lo que le quitaría la vida lejos del campo de batalla.</p>
+ <p><img src="imagenes/monu.jpg" width="482" height="274" alt="ignacio"></p>
+ <p>Monumento a los caidos en la Batalla de Puebla:</p>
+ <p><img src="imagenes/monu2.jpg" width="384" height="297" alt="caios"></p>
+ <p>A los heroes de la batalla:</p>
+ <p>Se libro esa cruenta batalla cuerpo a cuerpo, espada contra espada esta hoy un parque"LAS AMERICAS",esta erigido este monumento que simboliza la bandera Mexicana con los bustos de esos grandes heroes que defendieron nuestra soberania nacional ese 5 de mayo de 1862.</p>
+ <p><img src="imagenes/monu3.jpg" width="473" height="254" alt="heroes"></p>
+ <div data-role="main" class="ui-content"></div>
+ </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Seis,VCD</h4>
+</div>
+</div>
+ 
+ 
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>PERSONAJES DE LA BATALLA:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Algunos de los personajes que participaron fueron:</h2>
+<p>*Ignacio Zaragoza:Ministro de Guerra que dirigió el Ejército Mexicano</p> 
+<p>*Indígenas-zacapoaxtlas:se rebelaron en las afueras de la ciudad de Puebla contra las tropas francesas </p>
+<p>*Charles Ferdinand Latrille:Dirigió a las tropas francesas</p>
+<p>*Benito Juaréz: Gobernador de la republica mexicana</p>
+
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>IGNACIO ZARAGOZA</h2>
+<div>
+</div>
+<p><img src="imagenes/heroes.jpg" width="287" height="345" alt="HEROES"></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Seis,VCD</h4>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
